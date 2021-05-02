@@ -22,7 +22,7 @@
 
 # Running Locally
 
-gradle :bootRun
+```gradle :bootRun```
 
-#TODO
+# TODO
 * JUNIT Test cases
