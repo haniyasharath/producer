@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: producer-service
+    cloud:
+        stream:
+            bindings:
+                output:
+                    destination: receiving-service-in
+    rabbitmq:
+        host: localhost
+        port: 5672
+    security:
+        user:
+            name: admin
+            password: admin
+event.trigger: 0 0/2 * * * *
+server:
+    port: 8080
